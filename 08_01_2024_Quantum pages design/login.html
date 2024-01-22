@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <!-- Body wrapper -->
+    <div class="body-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-logo-wrapper">
+                <img src="../assets/icons/logo_used_in_header.svg" alt="Lightining bulb with quantum" class="nav-logo">
+            </div>
+        </nav>
+        <!-- end navbar -->
+
+        <!-- Form section -->
+        <div class="form-section d-flex justify-center align-center">
+
+            <!-- Form wrapper -->
+            <div class="form-wrapper">
+                <div class="form-heading">
+                    <div class="form-back-button">
+                        <img src="../assets/icons/back.svg" alt="back button" class="back-img">
+                    </div>
+                    Log in with Quantum
+                </div>
+
+                <!-- Form -->
+                <div class="form-element-wrapper">
+                    <form action="#">
+                        <!-- Radio buttons -->
+                        <div class="radio-wrapper">
+                            <!-- District radio -->
+                            <div class="radio-button">
+                                <img src="../assets/icons/radio-button-on.svg" alt="Radio button on"
+                                    class="radio button on">
+                                <span class="radio-lable">District</span>
+                            </div>
+                            <!-- end district radio -->
+
+                            <!-- School radio -->
+                            <div id="school-radio" class="radio-button">
+                                <img src="../assets/icons/radio-button-off.svg" alt="Radio button off"
+                                    class="radio button off">
+                                <span class="radio-lable">Independent School</span>
+                            </div>
+                            <!-- end School radio -->
+
+                        </div>
+                        <!-- Radio buttons -->
+
+                        <!-- State list -->
+                        <div class="list-wrapper">
+                            <span class="list-label">State*</span>
+                            <select name="state" id="" class="list">
+                                <option value="Alabama" selected>Alabama</option>
+                            </select>
+                        </div>
+                        <!-- end state list -->
+
+                        <!-- District list -->
+                        <div class="list-wrapper">
+                            <span class="list-label">District*</span>
+                            <select name="district" id="" class="list">
+                                <option value="Alabama" selected>Alabama School District</option>
+                            </select>
+                        </div>
+                        <!-- end district list -->
+
+                        <!-- Username wrapper -->
+                        <div class="username-wrapper" id="username">
+                            <input type="text" placeholder="Username/Email ID*" class="form-text">
+                            <div class="forgot-wrapper d-flex justify-end">forgot username?</div>
+                        </div>
+                        <!-- end username -->
+
+                        <!-- Password wrapper -->
+                        <div class="username-wrapper" id="password">
+                            <input type="password" placeholder="Password*" class="form-text">
+                            <div class="forgot-wrapper d-flex justify-end">forgot password?</div>
+                        </div>
+                        <!-- end username -->
+
+                        <!-- Remember me -->
+                        <div class="remember-wrapper d-flex align-center">
+                            <img src="../assets/icons/checkbox-checked.svg" alt="Remember me enabled"
+                                class="rememberme-checked">
+                            Remember Me
+                        </div>
+                        <!-- end remember me -->
+
+                        <!-- Login button -->
+                        <div class="login-button-container d-flex justify-center align-center">
+                            <input type="submit" value="Log in" class="login-button">
+                        </div>
+                        <!-- end login button -->
+                    </form>
+                </div>
+                <!-- end form -->
+            </div>
+            <!-- end form wrapper -->
+
+        </div>
+        <!-- end form section -->
+
+        <!-- Footer -->
+        <footer class="footer-wrapper d-flex justify-center align-center">
+            <div class="footer-quick-link-wrapper">About | Contact Us</div>
+
+            <!-- Copyright -->
+            <div class="copyright-wrapper d-flex justify-center align-center">
+                <div class="footer-logo-wrapper"><img src="../assets/icons/logo_used_in_footer.svg" alt="Quantum"></div>
+                <div class="copyright-text-wrapper">
+                    <span>
+                        Copyright &#169; 2020-2021 <strong>Zeus Systems Pvt. Ltd.</strong>                    
+                    </span>
+                    <span class="footer-text">
+                        All rights reserved.
+                    </span>
+                </div>
+            </div>
+            <!-- end copyright -->
+        </footer>
+        <!-- end footer -->
+    </div>
+    <!-- end body wrapper -->
+</body>
+
+</html>

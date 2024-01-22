@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docfile Tasks</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 id="topHeading">My first web page</h1>
+    <h3 class="subheadings">What is this</h3>
+    <p>Welcome to my first webpage. I created this webpage without the assistance of a webpage editor. Just any little
+        text editor and a keen <strong>understanding of HTML.</strong></p>
+
+    <h3 class="subheadings">Why this is</h3>
+    <div class="listcontainer">
+        <ul>
+            <li>To learn HTML</li>
+            <li>List element</li>
+            <ol>
+                <li>Home</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ol>
+            <li>Here I have created ordered and unordered list</li>
+        </ul>
+    </div>
+
+    <h3 class="subheadings">ZeusLearning.com</h3>
+    <a href="https://www.zeuslearning.com" target="_blank">This link will open zeuslearning.com in new tab</a>
+
+    <h3 class="subheadings">On click of following image navigate to Google.com</h3>
+    <div id="imageContainer">
+        <a href="https://www.google.com">
+            <img src="Google_logo.png" alt="Google logo" height="100">
+        </a>
+    </div>
+
+    <h3 class="formtableheading">Some random table</h3>
+    <!-- Table -->
+    <table border="1" class="tablestyling">
+        <!-- Row 1 -->
+        <tr>
+            <td>Row 1,Cell 1</td>
+            <td>Row 1,Cell 2</td>
+            <td>Row 1,Cell 3</td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td>Row 2,Cell 1</td>
+            <td>Row 2,Cell 2</td>
+            <td>Row 2,Cell 3</td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+            <td>Row 3,Cell 1</td>
+            <td>Row 3,Cell 2</td>
+            <td>Row 3,Cell 3</td>
+        </tr>
+    </table>
+    <!-- end table -->
+
+    <h3 class="formtableheading">Some random form</h3>
+    <div><strong class="fontitalic">Note: </strong>It looks the part, but won't do a anything.</div>
+    <!-- Form -->
+    <form action="#">
+        <p class="formlabel">Name:</p>
+        <input type="text" name="" id="" placeholder="Your Name">
+
+        <p class="formlabel">Comments:</p>
+        <textarea name="" id="" cols="30" rows="20">Your comments</textarea>
+
+        <p class="formlabel">Are you:</p>
+        <p><input type="radio" name="gender" id=""> Male</p>
+        <p><input type="radio" name="gender" id=""> Female</p>
+
+        <button type="submit">Submit Query</button>
+    </form>
+    <!-- end form -->
+</body>
+
+</html>

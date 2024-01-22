@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <!-- Body wrapper -->
+    <div class="body-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- Navbar logo -->
+            <div class="nav-logo-wrapper">
+                <img src="../assets/icons/logo_used_in_header.svg" alt="Lightining bulb" class="nav-logo">
+            </div>
+            <!-- end navbar logo -->
+
+            <!-- Navbar links -->
+            <div class="d-flex">
+                <ul class="d-flex">
+                    <li class="d-big-visible">Dashboard</li>
+                    <li class="d-big-visible">content</li>
+                    <li class="d-big-visible">users</li>
+                    <li class="d-big-visible">reports</li>
+                    <li class="d-big-visible">admin</li>
+                    <li class="count-wrapper">
+                        <div class="count">2</div>
+                        <img height="24px" width="24px" src="./assets/icons/alerts.svg" alt="alerts" class="alert-img">
+                    </li>
+                    <li class="count-wrapper">
+                        <span class="count">1</span>
+                        <img src="./assets//icons/announcements.svg" alt="accouncement">
+                    </li>
+                    <li class="count-wrapper">
+                        <span class="count-profile">1</span>
+                        <img src="./assets/profile_img.jpg" alt="user image" class="profile-img">
+                    </li>
+
+                    <!-- Hamburger button(For tablate and mobile view) -->
+                    <li class="d-tablate-visible">
+                        <img src="./assets/icons/hamburger-menu.svg" alt="Hamburger">
+                    </li>
+                    <!-- end hamburger button -->
+                </ul>
+            </div>
+            <!-- end navbar links -->
+
+        </nav>
+        <!-- end navbar -->
+
+        <!-- Dashboard wrapper -->
+        <div class="dashboard-wrapper">
+            <!-- Sub navber -->
+            <div class="sub-nav">
+                <div>
+                    <img src="./assets/icons/courses.svg" alt="Select courses">
+                    <span>4</span>
+                    Cources
+                </div>
+                <div>
+                    <img src="./assets/icons/classes.svg" alt="Select classes">
+                    <span>4</span>
+                    Classes
+                </div>
+            </div>
+            <!-- end sub narbar -->
+
+            <!-- Sort wrapper -->
+            <div class="sort-wrapper">
+                <div class="result-text">Showing 4 of 4 courses</div>
+                <div class="select-sorting">
+                    <span class="result-text">Sort by:</span>
+                    <select name="sort-courses">
+                        <option value="Course Name" selected>Course Name</option>
+                    </select>
+                    <img src="./assets/icons/sort.svg" alt="Sort courses">
+                </div>
+            </div>
+            <!-- end sort wrapper -->
+
+            <!-- Courses cards wrapper -->
+            <div class="courses-card-wrapper">
+
+                <!-- Card -1 -->
+                <div class="card">
+                    <!-- Card content -->
+                    <div class="card-content-wrapper">
+                        <img class="maks-img" src="./assets/images/imageMask.png" alt="Image mask 1">
+
+                        <div class="card-text-wrapper">
+                            <!-- card heading -->
+                            <div class="card-heading">
+                                <h4>Acceleration</h4>
+                                <div>
+                                    <img src="./assets/icons/favourite.svg" alt="Favourite course">
+                                </div>
+                            </div>
+                            <!-- end card heading -->
+
+                            <!-- course specification -->
+                            <div class="course-specification-wrapper">
+                                <p class="course-specification-1">
+                                    <span>Physics 2</span> | <span>Grade 7+2</span>
+                                </p>
+                                <p class="course-specification-2">
+                                    <strong>4</strong> Units <strong>18</strong> Lessons <strong>24</strong> Topics
+                                </p>
+                            </div>
+                            <!-- end course specification -->
+
+                            <!-- Course selection -->
+                            <div class="card-list-wrapper">
+                                <select name="" id="" >
+                                    <option value="" selected>Mr. Frank's Class B</option>
+                                </select>
+                            </div>
+                            <!-- end course selection -->
+
+                            <!-- Course enrollment details -->
+                            <div class="course-enrollment">
+                                60 students | 21-Jan-2020 - 21-Aug-2020
+                            </div>
+                            <!-- end course enrollment details -->
+                        </div>
+                    </div>
+                    <!-- end card content -->
+
+                    <hr class="seprator" />
+
+                    <!-- Card icon -->
+                    <div class="card-icon-wrapper">
+                        <a href="#"><img src="./assets/icons/preview.svg" alt="preview course"></a>
+                        <a href="#"><img src="./assets/icons/manage course.svg" alt="manage course"></a>
+                        <a href="#"><img src="./assets/icons/grade submissions.svg" alt="grade submission"></a>
+                        <a href="#"><img src="./assets/icons/reports.svg" alt="reportes"></a>
+                    </div>
+                    <!-- end card icon -->
+                </div>
+                <!-- end card-1 -->
+
+                <!-- Card-2 -->
+                <div class="card">
+                    <!-- Card content -->
+                    <div class="card-content-wrapper">
+                        <img class="maks-img" src="./assets/images/imageMask-1.png" alt="Image mask 1">
+
+                        <div class="card-text-wrapper">
+                            <!-- card heading -->
+                            <div class="card-heading">
+                                <h4>Displacement, Velocity and Speed</h4>
+                                <div>
+                                    <img src="./assets/icons/favourite.svg" alt="Favourite course">
+                                </div>
+                            </div>
+                            <!-- end card heading -->
+
+                            <!-- course specification -->
+                            <div class="course-specification-wrapper">
+                                <p class="course-specification-1">
+                                    <span>Physics 2</span> | <span>Grade 6+3</span>
+                                </p>
+                                <p class="course-specification-2">
+                                    <strong>2</strong> Units <strong>15</strong> Lessons <strong>20</strong> Topics
+                                </p>
+                            </div>
+                            <!-- end course specification -->
+
+                            <!-- Course selection -->
+                            <div class="card-list-wrapper">
+                                <select name="" id="" disabled>
+                                    <option value="" selected>No Classes</option>
+                                </select>
+                            </div>
+                            <!-- end course selection -->
+
+                        </div>
+
+
+                    </div>
+                    <!-- end card content -->
+
+                    <hr class="seprator" />
+
+                    <!-- Card icon -->
+                    <div class="card-icon-wrapper">
+                        <a href="#"><img src="./assets/icons/preview.svg" alt="preview course"></a>
+                        <a href="#" class="card-icon-blur"><img src="./assets/icons/manage course.svg"
+                                alt="manage course"></a>
+                        <a href="#" class="card-icon-blur"><img src="./assets/icons/grade submissions.svg"
+                                alt="grade submission"></a>
+                        <a href="#"><img src="./assets/icons/reports.svg" alt="reportes"></a>
+                    </div>
+                    <!-- end card icon -->
+                </div>
+                <!-- end card-2 -->
+
+                <!-- Card-3 -->
+                <div class="card">
+                    <!-- Card content -->
+                    <div class="card-content-wrapper">
+                        <img class="maks-img" src="./assets/images/imageMask-3.png" alt="Image mask 1">
+
+                        <div class="card-text-wrapper">
+                            <!-- card heading -->
+                            <div class="card-heading">
+                                <h4>Introduction to Biology: Micro organism and how the affect</h4>
+                                <div>
+                                    <img src="./assets/icons/favourite.svg" alt="Favourite course">
+                                </div>
+                            </div>
+                            <!-- end card heading -->
+
+                            <!-- course specification -->
+                            <div class="course-specification-wrapper">
+                                <p class="course-specification-1">
+                                    <span>Biology</span> | <span>Grade 4+1</span>
+                                </p>
+                                <p class="course-specification-2">
+                                    <strong>5</strong> Units <strong>16</strong> Lessons <strong>22</strong> Topics
+                                </p>
+                            </div>
+                            <!-- end course specification -->
+
+                            <!-- Course selection -->
+                            <div class="card-list-wrapper">
+                                <select name="" id="" >
+                                    <option value="" selected>All Classes</option>
+                                </select>
+                            </div>
+                            <!-- end course selection -->
+
+                            <!-- Course enrollment details -->
+                            <div class="course-enrollment">
+                                300 students
+                            </div>
+                            <!-- end course enrollment details -->
+                        </div>
+                    </div>
+                    <!-- end card content -->
+
+                    <hr class="seprator" />
+
+                    <!-- Card icon -->
+                    <div class="card-icon-wrapper">
+                        <a href="#"><img src="./assets/icons/preview.svg" alt="preview course"></a>
+                        <a href="#"><img src="./assets/icons/manage course.svg" alt="manage course"></a>
+                        <a href="#"><img src="./assets/icons/grade submissions.svg" alt="grade submission"></a>
+                        <a href="#"><img src="./assets/icons/reports.svg" alt="reportes"></a>
+                    </div>
+                    <!-- end card icon -->
+                </div>
+                <!-- end card-3 -->
+
+                <!-- Card-4 -->
+                <div class="card">
+                    <div class="expired">Expired</div>
+                    <!-- Card content -->
+                    <div class="card-content-wrapper">
+                        <img class="maks-img" src="./assets/images/imageMask-2.png" alt="Image mask 1">
+
+                        <div class="card-text-wrapper">
+                            <!-- card heading -->
+                            <div class="card-heading">
+                                <h4>Introduction to High School Mathematics</h4>
+                                <div>
+                                    <img src="./assets/icons/favourite.svg" alt="Favourite course">
+                                </div>
+                            </div>
+                            <!-- end card heading -->
+
+                            <!-- course specification -->
+                            <div class="course-specification-wrapper">
+                                <p class="course-specification-1">
+                                    <span>Mathematics</span> | <span>Grade 8+3</span>
+                                </p>
+                            </div>
+                            <!-- end course specification -->
+
+                            <!-- Course selection -->
+                            <div class="card-list-wrapper">
+                                <select name="" id="" >
+                                    <option value="" selected>Mr. Frank's Class A</option>
+                                </select>
+                            </div>
+                            <!-- end course selection -->
+
+                            <!-- Course enrollment details -->
+                            <div class="course-enrollment">
+                                44 students | 14-Oct-2020 - 20-oct-2020
+                            </div>
+                            <!-- end course enrollment details -->
+                        </div>
+                    </div>
+                    <!-- end card content -->
+
+                    <hr class="seprator" />
+
+                    <!-- Card icon -->
+                    <div class="card-icon-wrapper">
+                        <a href="#"><img src="./assets/icons/preview.svg" alt="preview course"></a>
+                        <a href="#"><img src="./assets/icons/manage course.svg" alt="manage course"></a>
+                        <a href="#"><img src="./assets/icons/grade submissions.svg" alt="grade submission"></a>
+                        <a href="#"><img src="./assets/icons/reports.svg" alt="reportes"></a>
+                    </div>
+                    <!-- end card icon -->
+                </div>
+                <!-- end card-4 -->
+            </div>
+            <!-- end courses cards wrapper -->
+        </div>
+        <!-- end sub-nav wrapper -->
+
+        <!-- Footer -->
+        <footer class="footer-wrapper d-flex justify-center align-center">
+            <div class="footer-quick-link-wrapper">About | Contact Us</div>
+
+            <!-- Copyright -->
+            <div class="copyright-wrapper d-flex justify-center align-center">
+                <div class="footer-logo-wrapper"><img src="../assets/icons/logo_used_in_footer.svg" alt="Quantum"></div>
+                <div class="copyright-text-wrapper">
+                    <span>
+                        Copyright &#169; 2020-2021 <strong>Zeus Systems Pvt. Ltd.</strong>
+                    </span>
+                    <span class="footer-text">
+                        All rights reserved.
+                    </span>
+                </div>
+            </div>
+            <!-- end copyright -->
+        </footer>
+        <!-- end footer -->
+    </div>
+    <!-- end body wrapper -->
+</body>
+
+</html>

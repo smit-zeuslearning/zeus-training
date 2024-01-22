@@ -1,0 +1,51 @@
+body{
+    background-color: #ffffcc;
+}
+
+#topHeading{
+    background-color: #990000;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 8px;
+    word-spacing: 6px;
+    border-bottom: 10px solid #cc0000;
+    color: #ffffff;
+}
+
+.subheadings{
+    background-color: #009900;
+    color: #ffffff;
+    padding: 2px 6px 2px 6px;
+}
+
+.listcontainer{
+    color: brown;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.formtableheading{
+    color: gray;
+    padding: 2px 6px 2px 6px;
+}
+
+.formlabel{
+    font-weight: bold;
+}
+
+.fontitalic{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.tablestyling{
+    background-color: rgb(163, 163, 163);
+    border: 1px solid #000000;
+}
+
+#imageContainer{
+    background-color: #ffffff;
+    width: max-content;
+    padding: 6px;
+    border: 2px dotted gray;
+}
