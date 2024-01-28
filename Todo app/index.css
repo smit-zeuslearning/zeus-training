@@ -1,0 +1,81 @@
+@font-face {
+  font-family: quicksand;
+  src: url("./Assets/fonts/Quicksand_font/Quicksand-VariableFont_wght.ttf");
+}
+body {
+  font-family: quicksand;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-wrapper {
+  background-color: #1F1F1F;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.navbar-wrapper .pic-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-wrapper .pic-wrapper #hamburger {
+  cursor: pointer;
+}
+.navbar-wrapper .pic-wrapper #profilePicture {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+.navbar-wrapper .username {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar-wrapper .username:hover {
+  cursor: pointer;
+  color: #c5c5c5;
+}
+
+.sidebar-wrapper {
+  background-color: #1F1F1F;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 215px;
+  max-width: 250px;
+  padding: 5px 7px;
+}
+.sidebar-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-wrapper li {
+  background-color: #504a5d;
+  margin-bottom: 4px;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.content-wrapper {
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .content-wrapper {
+    margin-left: 0 !important;
+    background-color: red;
+  }
+  #hamburger {
+    display: block;
+  }
+}/*# sourceMappingURL=index.css.map */

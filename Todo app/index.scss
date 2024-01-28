@@ -1,0 +1,120 @@
+// imprt fonts
+@font-face {
+    font-family: quicksand;
+    src: url('./Assets/fonts/Quicksand_font/Quicksand-VariableFont_wght.ttf');
+}
+
+// Color pallate
+$colorBlack: #1F1F1F;
+$colorGray: #504a5d;
+$colorGreen: #005B41;
+$colorPitch: #008170;
+$colorFont: #ffffff;
+
+$onhoverTextColor: #c5c5c5;
+
+// Font sizes
+$fontXS: 10px;
+$fontSmall: 12px;
+$fontMedium: 14px;
+$fontLarge: 16px;
+$fontXL: 24px;
+
+//Center element
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// CSS
+body {
+    font-family: quicksand;
+    color: $colorFont;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-wrapper {
+    background-color: $colorBlack;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+    .pic-wrapper {
+        @include center-content;
+        gap: 10px;
+    }
+
+    .pic-wrapper #hamburger {
+        cursor: pointer;
+    }
+
+    .pic-wrapper #profilePicture {
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        border: 2px solid black;
+    }
+
+    .username {
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+            color: $onhoverTextColor;
+        }
+    }
+}
+
+.sidebar-wrapper {
+    background-color: $colorBlack;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 215px;
+    max-width: 250px;
+    padding: 5px 7px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        background-color: $colorGray;
+        margin-bottom: 4px;
+        padding: 6px;
+        border-radius: 4px;
+    }
+}
+
+.content-wrapper {
+    color: black;
+}
+
+// Media queries
+// ======= Laptop view =======
+@media only screen and (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+}
+
+// ======= Tablate view =======
+@media only screen and (min-width: 300px) and (max-width:768px) {
+    .content-wrapper {
+        margin-left: 0 !important;
+        background-color: red;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+// ======= Mobile view =======
+@media only screen and (max-width: 300px) {}
