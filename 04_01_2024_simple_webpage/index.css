@@ -10,12 +10,19 @@ body{
     word-spacing: 6px;
     border-bottom: 10px solid #cc0000;
     color: #ffffff;
+    margin-bottom: 8px;
 }
+
 
 .subheadings{
     background-color: #009900;
     color: #ffffff;
-    padding: 2px 6px 2px 6px;
+    padding: 2px 4px 2px 4px;
+}
+
+#first-subheading{
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .listcontainer{
@@ -48,4 +55,8 @@ body{
     width: max-content;
     padding: 6px;
     border: 2px dotted gray;
+}
+
+.zeus-link{
+    text-decoration: none;
 }

@@ -10,9 +10,9 @@
 
 <body>
     <h1 id="topHeading">My first web page</h1>
-    <h3 class="subheadings">What is this</h3>
-    <p>Welcome to my first webpage. I created this webpage without the assistance of a webpage editor. Just any little
-        text editor and a keen <strong>understanding of HTML.</strong></p>
+    <h3 id="first-subheading" class="subheadings">What is this</h3>
+    <p>Welcome to <i>my first webpage</i>. I created this webpage without the assistance of a webpage editor. Just any little
+        text editor and a keen <strong><i>understanding of HTML</i>.</strong></p>
 
     <h3 class="subheadings">Why this is</h3>
     <div class="listcontainer">
@@ -30,7 +30,7 @@
     </div>
 
     <h3 class="subheadings">ZeusLearning.com</h3>
-    <a href="https://www.zeuslearning.com" target="_blank">This link will open zeuslearning.com in new tab</a>
+    <a class="zeus-link" href="https://www.zeuslearning.com" target="_blank">This link will open zeuslearning.com in new tab</a>
 
     <h3 class="subheadings">On click of following image navigate to Google.com</h3>
     <div id="imageContainer">
@@ -68,20 +68,23 @@
     <h3 class="formtableheading">Some random form</h3>
     <div><strong class="fontitalic">Note: </strong>It looks the part, but won't do a anything.</div>
     <!-- Form -->
-    <form action="#">
-        <p class="formlabel">Name:</p>
-        <input type="text" name="" id="" placeholder="Your Name">
+    <form name="demo-form" id="demo-form" method="get" action="">
+        <p class="formlabel"><label for="name">Name:</label></p>
+        <input type="text" name="name" id="name" placeholder="Your Name">
 
-        <p class="formlabel">Comments:</p>
-        <textarea name="" id="" cols="30" rows="20">Your comments</textarea>
+        <p class="formlabel"><label for="comments">Comments:</label></p>
+        <textarea name="comments" id="comments" cols="30" rows="20" placeholder="Your comments"></textarea>
 
         <p class="formlabel">Are you:</p>
-        <p><input type="radio" name="gender" id=""> Male</p>
-        <p><input type="radio" name="gender" id=""> Female</p>
+        <p><label for="male-radio"><input type="radio" name="gender" value="male" id="male-radio"> Male</label></p>
+        <p><label for="female-radio"><input type="radio" name="gender" value="female" id="female-radio"> Female</label></p>
 
         <button type="submit">Submit Query</button>
     </form>
     <!-- end form -->
+
+    <!-- Script to validate the form -->
+    <script src="./index.js"></script>
 </body>
 
 </html>
